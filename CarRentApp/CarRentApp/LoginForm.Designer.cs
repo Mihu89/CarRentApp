@@ -71,6 +71,7 @@ namespace CarRentApp
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(289, 29);
             this.tbPassword.TabIndex = 4;
+            this.tbPassword.MouseLeave += new System.EventHandler(this.tbPassword_MouseLeave);
             // 
             // lPassword
             // 
@@ -84,7 +85,8 @@ namespace CarRentApp
             // 
             // btnLogin
             // 
-            this.btnLogin.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnLogin.BackColor = System.Drawing.SystemColors.Control;
+            this.btnLogin.Enabled = false;
             this.btnLogin.Location = new System.Drawing.Point(852, 305);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(174, 49);
